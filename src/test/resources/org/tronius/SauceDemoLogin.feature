@@ -7,6 +7,3 @@ Feature: Login feature with adding one item to the cart, at the end user will pr
     And user clicks on checkout button and fills up the checkout information
     And user verifies Payment Information and proceeds with order confirmation
     And user clicks on back home button and user lands on dashboard page
-    #And user verifies Price Total
-    #And user clicks on finish button and verifies confirmation message
-    #And user clicks on back home user lands back on swag lab dashboard

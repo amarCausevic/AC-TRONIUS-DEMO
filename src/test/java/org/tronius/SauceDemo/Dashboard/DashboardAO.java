@@ -1,12 +1,14 @@
 package org.tronius.SauceDemo.Dashboard;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
+import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.By;
-import org.testng.Assert;
 import org.tronius.Enums.Dashboard.DashboardClass;
 import org.tronius.Enums.NumberEnum;
 import org.tronius.Enums.PropertyName;
 import org.tronius.Enums.TagName;
+import org.tronius.SauceDemo.Cart.CartSO;
 import utils.ElementUtils;
 import utils.NumberUtils;
 import utils.StorageUtils;
@@ -14,9 +16,14 @@ import utils.StorageUtils;
 public class DashboardAO {
 
   private final DashboardSO dashboardSO = new DashboardSO();
+  private final CartSO cartSO = new CartSO();
   private final NumberUtils numberUtils = new NumberUtils();
   private final ElementUtils elementUtils = new ElementUtils();
   private final StorageUtils storageUtils = new StorageUtils();
+
+  public void clickAddToCartButton() {
+    cartSO.buttonAddToCart.shouldBe(Condition.visible).click();
+  }
 
   public void navigateToItemDetailsPage() {
     int index = 0;
@@ -34,11 +41,11 @@ public class DashboardAO {
   }
 
   public void assertItemDetailsPage() {
-    Assert.assertEquals(storageUtils.getItem(PropertyName.ITEM_NAME.val),
+    Assertions.assertEquals(storageUtils.getItem(PropertyName.ITEM_NAME.val),
         elementUtils.getText(dashboardSO.itemDetailsName), "Asserting detail label value");
-    Assert.assertEquals(storageUtils.getItem(PropertyName.ITEM_DESC.val),
+    Assertions.assertEquals(storageUtils.getItem(PropertyName.ITEM_DESC.val),
         elementUtils.getText(dashboardSO.itemDetailsDesc), "Asserting detail description value");
-    Assert.assertEquals(storageUtils.getItem(PropertyName.ITEM_PRICE.val),
+    Assertions.assertEquals(storageUtils.getItem(PropertyName.ITEM_PRICE.val),
         elementUtils.getText(dashboardSO.itemDetailsPrice), "Asserting detail price value");
   }
 

@@ -25,4 +25,13 @@ public interface TroniusConfig extends Config {
 
   @Key("${environment}.sauce.password")
   String saucePassword();
+
+  @Key("${environment}.sauce.customer.name")
+  String sauceCustomerName();
+
+  @Key("${environment}.sauce.customer.lastName")
+  String sauceCustomerLastName();
+
+  @Key("${environment}.sauce.customer.postalCode")
+  String sauceCustomerPostalCode();
 }

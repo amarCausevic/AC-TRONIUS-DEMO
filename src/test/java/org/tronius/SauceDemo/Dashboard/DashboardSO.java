@@ -16,6 +16,4 @@ public class DashboardSO {
       byXpath("//div[@data-test='inventory-item-desc']"));
   public final SelenideElement itemDetailsPrice = $(
       byXpath("//div[@data-test='inventory-item-price']"));
-  public final SelenideElement buttonAddToCart = $(
-      byXpath("//button[@data-test='add-to-cart']"));
 }

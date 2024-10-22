@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>Tronius</artifactId>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <encoding>UTF-8</encoding>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.13.0</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <configuration>
+          <properties>
+            <!-- Work around. Surefire does not include enough
+                 information to disambiguate between different
+                 examples and scenarios. -->
+            <configurationParameters>
+              cucumber.junit-platform.naming-strategy=long
+            </configurationParameters>
+          </properties>
+        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.5.1</version>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <dependency>
+      <artifactId>cucumber-java</artifactId>
+      <groupId>io.cucumber</groupId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <artifactId>cucumber-junit-platform-engine</artifactId>
+      <groupId>io.cucumber</groupId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <artifactId>junit-platform-suite</artifactId>
+      <groupId>org.junit.platform</groupId>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <artifactId>junit-jupiter</artifactId>
+      <groupId>org.junit.jupiter</groupId>
+      <scope>test</scope>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.aeonbits.owner/owner -->
+    <dependency>
+      <artifactId>owner</artifactId>
+      <groupId>org.aeonbits.owner</groupId>
+      <version>1.0.12</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-chrome-driver -->
+    <dependency>
+      <artifactId>selenium-chrome-driver</artifactId>
+      <groupId>org.seleniumhq.selenium</groupId>
+      <version>4.25.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/com.codeborne/selenide -->
+    <dependency>
+      <artifactId>selenide</artifactId>
+      <groupId>com.codeborne</groupId>
+      <version>7.5.1</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+    <dependency>
+      <artifactId>testng</artifactId>
+      <groupId>org.testng</groupId>
+      <scope>test</scope>
+      <version>7.10.2</version>
+    </dependency>
+  </dependencies>
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <artifactId>cucumber-bom</artifactId>
+        <groupId>io.cucumber</groupId>
+        <scope>import</scope>
+        <type>pom</type>
+        <version>7.20.1</version>
+      </dependency>
+      <dependency>
+        <artifactId>junit-bom</artifactId>
+        <groupId>org.junit</groupId>
+        <scope>import</scope>
+        <type>pom</type>
+        <version>5.11.2</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+  <groupId>org.example</groupId>
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <packaging>jar</packaging>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <version>1.0-SNAPSHOT</version>
+</project>

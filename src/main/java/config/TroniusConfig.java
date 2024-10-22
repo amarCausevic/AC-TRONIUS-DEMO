@@ -20,6 +20,9 @@ public interface TroniusConfig extends Config {
   @Key("${environment}.sauce.baseUri")
   String sauceBaseUri();
 
+  @Key("${environment}.jsonPlaceholder.baseUri")
+  String jsonPlaceholderBaseUri();
+
   @Key("${environment}.sauce.username")
   String sauceUsername();
 
@@ -34,4 +37,7 @@ public interface TroniusConfig extends Config {
 
   @Key("${environment}.sauce.customer.postalCode")
   String sauceCustomerPostalCode();
+
+  @Key("schema.posts")
+  String schemaPosts();
 }

@@ -103,6 +103,60 @@
       <version>${allure.version}</version>
     </dependency>
 
+    <dependency>
+      <artifactId>rest-assured</artifactId>
+      <groupId>io.rest-assured</groupId>
+      <version>5.3.2</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>slf4j-api</artifactId>
+      <groupId>org.slf4j</groupId>
+      <version>2.0.16</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>slf4j-simple</artifactId>
+      <groupId>org.slf4j</groupId>
+      <version>2.0.16</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>log4j-api</artifactId>
+      <groupId>org.apache.logging.log4j</groupId>
+      <version>2.22.0</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>log4j-core</artifactId>
+      <groupId>org.apache.logging.log4j</groupId>
+      <version>2.22.0</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>log4j-core</artifactId>
+      <groupId>org.apache.logging.log4j</groupId>
+      <version>2.22.0</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <scope>provided</scope>
+      <version>1.18.34</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>json-schema-validator</artifactId>
+      <groupId>io.rest-assured</groupId>
+      <version>5.5.0</version>
+    </dependency>
+
+    <dependency>
+      <artifactId>jackson-core</artifactId>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <version>2.17.1</version>
+    </dependency>
   </dependencies>
   <dependencyManagement>
     <dependencies>

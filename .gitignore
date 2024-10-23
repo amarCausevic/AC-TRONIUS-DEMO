@@ -91,3 +91,4 @@ target/test-classes/org/tronius/Enums/CommonString.class
 target/test-classes/allure.properties
 target/allure-results/a2baa05d-f2ba-4d33-93c4-0b2a25b79924-container.json
 target/allure-results/2d1f7640-bd68-4509-94e3-580f369afc4d-result.json
+/target/

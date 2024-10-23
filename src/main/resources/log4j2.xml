@@ -4,7 +4,7 @@
     <Console name="Console" target="SYSTEM_OUT">
       <PatternLayout pattern="%d %p %c{1.} [%t] %m%n"/>
     </Console>
-    <File fileName="logs/Booking.log" name="File">
+    <File fileName="logs/Tronius.log" name="File">
       <PatternLayout pattern="%d %p %c{1.} [%t] %m%n"/>
     </File>
   </Appenders>

@@ -10,7 +10,10 @@ public enum CommonString {
   SHIPPING_SOURCE("Free Pony Express Delivery!"),
   CONFIRMATION_HEADER("Thank you for your order!"),
   CONFIRMATION_TEXT(
-      "Your order has been dispatched, and will arrive just as fast as the pony can get there!");
+      "Your order has been dispatched, and will arrive just as fast as the pony can get there!"),
+  POSTS_TITLE("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"),
+  POSTS_BODY(
+      "quia et suscipit suscipit recusandae consequuntur expedita et cum reprehenderit molestiae ut ut quas totam nostrum rerum est autem sunt rem eveniet architecto");
 
   public final String val;
 

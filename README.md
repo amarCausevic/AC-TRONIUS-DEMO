@@ -1,4 +1,14 @@
 # AC-TRONIUS-DEMO
+ 
+# Commands
+```
+#Run E2E and API test
+command: mvn clean test  -Denvironment=PROD
+
+#Run locust
+Proceed to folder local-performance
+command: locust
+```
 
 ## Framework
 
@@ -63,3 +73,52 @@ Flow that I have choosen for api testing scenario:
 *Locust
 
 For load performance I have chosen locust framework, quick simple example where I simulate 50 users that will access different endpoint, with html report to show us results of the run.
+
+#Setting up enviroment
+## Project
+You will need to checkout this project, and simple build and rebuild will download all dependencies for testing framework.
+
+## Config
+Config file in resources folder contains all properties that are used accross all project where need ofcourse. 
+For reading and setting confif I have used import org.aeonbits.owner dependency which provides quick setup and defining all properties. 
+
+Default environmnet variable is set to PROD. 
+
+## Locust
+Simple pip3 install locust will install locust framework to your local machine. 
+locust conf file has been added to the project were you can set different values:
+
+```
+headless = true
+users = 50
+spawn-rate = 1
+host = "https://blazedemo.com"
+run-time = 30s
+logfile=demo_report.log
+html=Load_Performance.html
+```
+
+This configuration will simulate 50 user running abd executing requests to 4 different endpoints. Also log and report file will be created once results are in.
+
+Add python to module if you are using intellij idea as shown in the screenshot below:
+
+![image](https://github.com/user-attachments/assets/44b2562f-fcb4-4735-b02f-55c2e120a12a)
+
+And also SDK for Python should be define so locust lib is present;
+
+![image](https://github.com/user-attachments/assets/d1c6af56-1966-43c9-a43b-8b724f6f7ab3)
+
+## Web Driver
+For this project I am using chrome driver which can be installed with brew. As brew install chrome-driver. Latest driver needs to be used if you are using chrome versio 130.0
+
+# Reports
+## Cucumber report for API and E2E scenarios
+As seen from the report below no issue has been found during the execution. Report can be found in root of the project in folder cucumber-report
+
+![image](https://github.com/user-attachments/assets/b7101233-238f-4bde-9617-183f3691e16c)
+
+## Locust report
+![image](https://github.com/user-attachments/assets/3f3bf535-d47c-4cea-9227-999dafac4817)
+![image](https://github.com/user-attachments/assets/828046a1-fdd2-4bf1-83bf-c351bb93b6cf)
+
+

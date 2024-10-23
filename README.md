@@ -118,7 +118,13 @@ As seen from the report below no issue has been found during the execution. Repo
 ![image](https://github.com/user-attachments/assets/b7101233-238f-4bde-9617-183f3691e16c)
 
 ## Locust report
+As seen from the report below there has been issue with adding wrong URL which has been cought during performance testing, also there was connection reset error which happened during GET execution of home page. Response time does not vary to much it stays the same all around 300 - 400ms.
+
+Test was run 30 seconds simulating 50 user.
+
 ![image](https://github.com/user-attachments/assets/3f3bf535-d47c-4cea-9227-999dafac4817)
 ![image](https://github.com/user-attachments/assets/828046a1-fdd2-4bf1-83bf-c351bb93b6cf)
+![image](https://github.com/user-attachments/assets/b876d8b5-4dbe-40d1-9809-97e6e3ddc9a5)
+
 
 

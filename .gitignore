@@ -2,3 +2,5 @@
 /build/
 /.idea/
 logs/Tronius.log
+load-performance/Load_Performance_Backup.html
+load-performance/__pycache__/locustfile.cpython-312.pyc

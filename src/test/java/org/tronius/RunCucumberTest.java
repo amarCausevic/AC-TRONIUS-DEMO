@@ -10,10 +10,7 @@ import org.junit.platform.suite.api.Suite;
 @Suite
 @IncludeEngines("cucumber")
 @SelectPackages("org.tronius")
-@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "pretty")
-@ConfigurationParameter(
-    key = PLUGIN_PROPERTY_NAME,
-    value = "io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm"
+@ConfigurationParameter(key = PLUGIN_PROPERTY_NAME, value = "html:target/cucumber-reports/Cucumber.html"
 )
 public class RunCucumberTest {
 

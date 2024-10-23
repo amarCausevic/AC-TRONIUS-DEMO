@@ -19,9 +19,6 @@
       <plugin>
         <artifactId>maven-surefire-plugin</artifactId>
         <configuration>
-          <argLine>
-            -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
-          </argLine>
           <properties>
             <!-- Work around. Surefire does not include enough
                  information to disambiguate between different
@@ -31,18 +28,6 @@
             </configurationParameters>
           </properties>
         </configuration>
-        <dependencies>
-          <dependency>
-            <artifactId>aspectjweaver</artifactId>
-            <groupId>org.aspectj</groupId>
-            <version>${aspectj.version}</version>
-          </dependency>
-          <dependency>
-            <artifactId>allure-junit4-aspect</artifactId>
-            <groupId>io.qameta.allure</groupId>
-            <version>2.27.0</version>
-          </dependency>
-        </dependencies>
         <groupId>org.apache.maven.plugins</groupId>
         <version>3.5.1</version>
       </plugin>
@@ -92,33 +77,9 @@
     </dependency>
 
     <dependency>
-      <artifactId>allure-cucumber7-jvm</artifactId>
-      <groupId>io.qameta.allure</groupId>
-      <version>${allure.version}</version>
-    </dependency>
-
-    <dependency>
-      <artifactId>allure-junit-platform</artifactId>
-      <groupId>io.qameta.allure</groupId>
-      <version>${allure.version}</version>
-    </dependency>
-
-    <dependency>
       <artifactId>rest-assured</artifactId>
       <groupId>io.rest-assured</groupId>
       <version>5.3.2</version>
-    </dependency>
-
-    <dependency>
-      <artifactId>slf4j-api</artifactId>
-      <groupId>org.slf4j</groupId>
-      <version>2.0.16</version>
-    </dependency>
-
-    <dependency>
-      <artifactId>slf4j-simple</artifactId>
-      <groupId>org.slf4j</groupId>
-      <version>2.0.16</version>
     </dependency>
 
     <dependency>
@@ -174,13 +135,6 @@
         <type>pom</type>
         <version>5.11.2</version>
       </dependency>
-      <dependency>
-        <artifactId>allure-bom</artifactId>
-        <groupId>io.qameta.allure</groupId>
-        <scope>import</scope>
-        <type>pom</type>
-        <version>${allure.version}</version>
-      </dependency>
     </dependencies>
   </dependencyManagement>
   <groupId>org.example</groupId>
@@ -190,8 +144,6 @@
   <packaging>jar</packaging>
 
   <properties>
-    <allure.version>2.29.0</allure.version>
-    <aspectj.version>1.9.20.1</aspectj.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
 

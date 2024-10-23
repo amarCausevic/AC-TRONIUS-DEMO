@@ -5,10 +5,12 @@ import config.factory.ConfigFactory;
 import io.restassured.RestAssured;
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.http.ContentType;
+import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import java.io.File;
 import java.util.HashMap;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -69,5 +71,12 @@ public class RestUtils extends RestAssured {
 
   public static Object emptyObject() {
     return new Object();
+  }
+
+  public void validateResponseDataSchema(Response response, String schemaPath) {
+    File schemaFile = new File(schemaPath);
+
+    response.then().assertThat()
+        .body(JsonSchemaValidator.matchesJsonSchema(schemaFile));
   }
 }

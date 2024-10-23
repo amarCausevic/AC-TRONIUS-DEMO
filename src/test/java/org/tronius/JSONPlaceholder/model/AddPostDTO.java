@@ -10,14 +10,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class PostDTO {
+public class AddPostDTO {
 
-  @JsonProperty("userId")
-  private int userId;
-  @JsonProperty("id")
-  private int id;
   @JsonProperty("title")
   private String title;
   @JsonProperty("body")
   private String body;
+  @JsonProperty("userId")
+  private int userId;
 }

@@ -9,6 +9,10 @@ public enum CommonString {
   PAYMENT_SOURCE("SauceCard #31337"),
   SHIPPING_SOURCE("Free Pony Express Delivery!"),
   CONFIRMATION_HEADER("Thank you for your order!"),
+  ADD_POST_TITLE("New test title"),
+  ADD_POST_BODY("New test body"),
+  UPDATE_POST_TITLE("Update test title"),
+  UPDATE_POST_BODY("Update test body"),
   CONFIRMATION_TEXT(
       "Your order has been dispatched, and will arrive just as fast as the pony can get there!"),
   POSTS_TITLE("sunt aut facere repellat provident occaecati excepturi optio reprehenderit"),

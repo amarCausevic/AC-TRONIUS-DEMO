@@ -1,0 +1,258 @@
+[2024-10-23 19:34:59,051] 14-LM-00074/INFO/locust.main: Starting Locust 2.32.0
+[2024-10-23 19:34:59,052] 14-LM-00074/INFO/locust.main: Run time limit set to 30 seconds
+[2024-10-23 19:34:59,053] 14-LM-00074/INFO/locust.runners: Ramping to 10 users at a rate of 1.00 per second
+[2024-10-23 19:35:08,078] 14-LM-00074/INFO/locust.runners: All users spawned: {"LocustBlaze": 10} (10 total users)
+[2024-10-23 19:35:28,892] 14-LM-00074/INFO/locust.main: --run-time limit reached, shutting down
+[2024-10-23 19:35:28,979] 14-LM-00074/INFO/locust.main: writing html report to file: Load_Performance
+[2024-10-23 19:35:28,980] 14-LM-00074/INFO/locust.main: Shutting down (exit code 0)
+[2024-10-23 19:36:58,443] 14-LM-00074/INFO/locust.main: Starting Locust 2.32.0
+[2024-10-23 19:36:58,446] 14-LM-00074/INFO/locust.main: Run time limit set to 30 seconds
+[2024-10-23 19:36:58,447] 14-LM-00074/INFO/locust.runners: Ramping to 50 users at a rate of 1.00 per second
+[2024-10-23 19:37:28,269] 14-LM-00074/INFO/locust.main: --run-time limit reached, shutting down
+[2024-10-23 19:37:28,353] 14-LM-00074/INFO/locust.main: writing html report to file: Load_Performance.html
+[2024-10-23 19:37:28,355] 14-LM-00074/INFO/locust.main: Shutting down (exit code 0)
+[2024-10-23 19:41:50,844] 14-LM-00074/INFO/locust.main: Starting Locust 2.32.0
+[2024-10-23 19:41:50,846] 14-LM-00074/INFO/locust.main: Run time limit set to 30 seconds
+[2024-10-23 19:41:50,847] 14-LM-00074/INFO/locust.runners: Ramping to 50 users at a rate of 1.00 per second
+[2024-10-23 19:42:20,663] 14-LM-00074/INFO/locust.main: --run-time limit reached, shutting down
+[2024-10-23 19:42:20,750] 14-LM-00074/INFO/locust.main: writing html report to file: Load_Performance.html
+[2024-10-23 19:42:20,752] 14-LM-00074/INFO/locust.main: Shutting down (exit code 0)
+[2024-10-23 19:42:26,889] 14-LM-00074/INFO/locust.main: Starting Locust 2.32.0
+[2024-10-23 19:42:26,890] 14-LM-00074/INFO/locust.main: Run time limit set to 30 seconds
+[2024-10-23 19:42:26,891] 14-LM-00074/INFO/locust.runners: Ramping to 50 users at a rate of 1.00 per second
+[2024-10-23 19:42:29,617] 14-LM-00074/INFO/locust.main: writing html report to file: Load_Performance.html
+[2024-10-23 19:42:29,620] 14-LM-00074/INFO/locust.main: Shutting down (exit code 0)
+[2024-10-23 19:42:38,493] 14-LM-00074/INFO/locust.main: Starting Locust 2.32.0
+[2024-10-23 19:42:38,494] 14-LM-00074/INFO/locust.main: Run time limit set to 30 seconds
+[2024-10-23 19:42:38,495] 14-LM-00074/WARNING/root: LocustBlaze had no tasks left after filtering, instantiating it will fail!
+[2024-10-23 19:42:38,495] 14-LM-00074/INFO/locust.runners: Ramping to 50 users at a rate of 1.00 per second
+[2024-10-23 19:42:38,495] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:39,502] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:39,989] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:40,502] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:41,507] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:42,508] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:43,156] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:43,510] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:43,651] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:44,511] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:44,540] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:44,869] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:45,512] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:46,232] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:46,517] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:46,904] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:47,259] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:47,515] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:47,517] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:47,561] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:47,696] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:48,397] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:48,521] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:42:48,710] 14-LM-00074/INFO/locust.main: writing html report to file: Load_Performance.html
+[2024-10-23 19:42:48,711] 14-LM-00074/INFO/locust.main: Shutting down (exit code 1)
+[2024-10-23 19:42:48,728] 14-LM-00074/ERROR/locust.user.task: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+Traceback (most recent call last):
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 335, in run
+    self.schedule_task(self.get_next_task())
+                       ^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/locust/user/task.py", line 479, in get_next_task
+    raise Exception(
+Exception: No tasks defined on LocustBlaze. Use the @task decorator or set the 'tasks' attribute of the User (or mark it as abstract = True if you only intend to subclass it)
+
+[2024-10-23 19:43:10,363] 14-LM-00074/INFO/locust.main: Starting Locust 2.32.0
+[2024-10-23 19:43:10,364] 14-LM-00074/INFO/locust.main: Run time limit set to 30 seconds
+[2024-10-23 19:43:10,365] 14-LM-00074/INFO/locust.runners: Ramping to 50 users at a rate of 1.00 per second
+[2024-10-23 19:43:40,255] 14-LM-00074/INFO/locust.main: --run-time limit reached, shutting down
+[2024-10-23 19:43:40,343] 14-LM-00074/INFO/locust.main: writing html report to file: Load_Performance.html
+[2024-10-23 19:43:40,346] 14-LM-00074/INFO/locust.main: Shutting down (exit code 0)
+[2024-10-23 19:44:24,063] 14-LM-00074/INFO/locust.main: Starting Locust 2.32.0
+[2024-10-23 19:44:24,065] 14-LM-00074/INFO/locust.main: Run time limit set to 30 seconds
+[2024-10-23 19:44:24,066] 14-LM-00074/INFO/locust.runners: Ramping to 50 users at a rate of 1.00 per second
+[2024-10-23 19:44:53,885] 14-LM-00074/INFO/locust.main: --run-time limit reached, shutting down
+[2024-10-23 19:44:53,976] 14-LM-00074/INFO/locust.main: writing html report to file: Load_Performance.html
+[2024-10-23 19:44:53,978] 14-LM-00074/INFO/locust.main: Shutting down (exit code 1)

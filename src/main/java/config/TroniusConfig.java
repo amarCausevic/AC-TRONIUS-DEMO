@@ -40,4 +40,10 @@ public interface TroniusConfig extends Config {
 
   @Key("schema.posts")
   String schemaPosts();
+
+  @Key("schema.add.post")
+  String addPostSchema();
+
+  @Key("schema.update.post")
+  String updatePostSchema();
 }

@@ -126,5 +126,13 @@ Test was run 30 seconds simulating 50 user.
 ![image](https://github.com/user-attachments/assets/828046a1-fdd2-4bf1-83bf-c351bb93b6cf)
 ![image](https://github.com/user-attachments/assets/b876d8b5-4dbe-40d1-9809-97e6e3ddc9a5)
 
+# POSTMAN COLLECTION
+Postman collection has been added to this repository for JSONPlaceholder website. Use JSON Placeholder.postman_collection.json to import to your postman collection.
+File name: JSON Placeholder.postman_collection.json
+
+![image](https://github.com/user-attachments/assets/284ef956-a1a9-4a31-bbcd-cc9cc2b058d5)
+
+
+
 
 

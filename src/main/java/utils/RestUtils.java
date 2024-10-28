@@ -79,4 +79,14 @@ public class RestUtils extends RestAssured {
     response.then().assertThat()
         .body(JsonSchemaValidator.matchesJsonSchema(schemaFile));
   }
+
+    public <T> T deserializeBody(Response response, Class<T> dto) {
+    if (response != null) {
+      JsonPath body = extractResponseAsJSON(response);
+      return body.getObject("", dto);
+    }
+
+    LOGGER.error(CommonLog.RESPONSE_NULL_MAP_DTO.val());
+    return null;
+  }
 }

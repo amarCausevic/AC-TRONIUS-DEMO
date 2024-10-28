@@ -2,7 +2,6 @@ package org.tronius.JSONPlaceholder;
 
 import io.restassured.RestAssured;
 import io.restassured.http.Method;
-import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import java.util.HashMap;
 import org.junit.jupiter.api.Assertions;
@@ -70,26 +69,6 @@ public class ApiDemoAO extends RestUtils {
     return response;
   }
 
-  private PostsDTO deserializePostsDTO(Response response) {
-    if (response != null) {
-      JsonPath body = extractResponseAsJSON(response);
-
-      return body.getObject("", PostsDTO.class);
-    }
-
-    return null;
-  }
-
-  private PostDTO deserializePostDTO(Response response) {
-    if (response != null) {
-      JsonPath body = extractResponseAsJSON(response);
-
-      return body.getObject("", PostDTO.class);
-    }
-
-    return null;
-  }
-
   public void validateGETResponseDataSchema() {
     validateResponseDataSchema(response, CONFIG.schemaPosts());
   }
@@ -103,7 +82,7 @@ public class ApiDemoAO extends RestUtils {
   }
 
   public void validateResponseMappedData() {
-    PostsDTO postsDTO = deserializePostsDTO(response);
+    PostsDTO postsDTO = deserializeBody(response, PostsDTO.class);
     PostDTO postDTO = postsDTO.getPosts().stream().findFirst().get();
 
     Assertions.assertEquals(postDTO.getTitle(), CommonString.POSTS_TITLE.val);
@@ -112,7 +91,7 @@ public class ApiDemoAO extends RestUtils {
   }
 
   public void validateAddResponseMappedData() {
-    PostDTO postDTO = deserializePostDTO(response);
+    PostDTO postDTO = deserializeBody(response, PostDTO.class);
     newPostDTO = postDTO;
 
     Assertions.assertEquals(postDTO.getTitle(), CommonString.ADD_POST_TITLE.val);
